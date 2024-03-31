@@ -1,0 +1,250 @@
+.App {
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white for better contrast */
+  font-family: sans-serif; /* Set a basic font family */
+  display: flex; /* Center content horizontally (optional) */
+  flex-direction: column;
+  justify-content: center; /* Center content horizontally (optional) */
+  align-items: center; /* Center content vertically (optional) */
+  min-height: 100vh; /* Set minimum height to viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Add some padding */
+}
+
+h1,
+h2,
+h3 {
+  font-size: clamp(
+    24px,
+    3vw,
+    40px
+  ) !important; /* Adjust min, preferred, and max font sizes */
+  margin: 1rem 0;
+}
+
+p {
+  font-size: clamp(
+    1rem,
+    1.5vw,
+    1.2rem
+  ); /* Adjust min, preferred, and max font sizes */
+  margin: 0.5rem 0;
+}
+
+.button1 {
+  background-color: #951d5a !important;
+  color: white; /* Default text color */
+  padding: 10px 20px; /* Padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Indicate clickable behavior */
+}
+
+.button1:hover {
+  background-color: #4caf50 !important; /* Hover background color */
+  /* Add additional hover effects here */
+}
+
+.footer {
+  background-color: #000000; /* Set footer background color */
+  color: white; /* Set footer text color */
+  padding: 10px; /* Add some padding */
+  text-align: center; /* Center the content */
+  width: 100%; /* Set the width to 100% of its container */
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Distribute content horizontally */
+  align-items: center; /* Align content vertically */
+}
+
+.footer-content {
+  width: calc(100% - 20px); /* Adjust padding as needed */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.forgotButton {
+  text-decoration: none;
+}
+
+.loginPage img {
+  border: 2px solid white;
+  background-size: cover;
+  background-position: center;
+}
+.loginContainer {
+  height: auto;
+  background-color: white;
+}
+
+.navbarContainer {
+  background-color: black;
+  padding: 20px;
+}
+.navbar-brand img {
+  margin-right: auto;
+  padding-left: 70px;
+  width: 250px;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.nav-item {
+  font-size: 25px;
+  padding-right: 70px;
+  font-weight: bold;
+}
+.nav-item a {
+  color: #f8e46f !important;
+  margin-left: auto !important;
+}
+
+.message {
+  width: 80%;
+  height: 90vh;
+  margin: 2rem auto;
+  font-size: 18px !important;
+}
+
+.errorMessage {
+  /* If we need any styles for the error message in the login, we gonna add it here */
+}
+.GoBack {
+  width: 150px;
+  height: auto;
+}
+.titleCommunication {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: bold;
+  /* padding-top: 85px; */
+  /* padding: 30px; */
+}
+
+.centered-container {
+  display: flex;
+  align-items: center; /* Vertically center the container */
+  justify-content: center;
+  height: 500px;
+  border-radius: 25px;
+  width: 45%;
+  margin: auto;
+}
+.iconContainer {
+  padding-left: 2rem !important;
+}
+.iconImage {
+  border: 2px solid #892959;
+  width: 142px;
+  height: 156px;
+  border-radius: 26px;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconImage img {
+  width: 80% !important;
+  padding: 10px;
+}
+.box {
+  border-radius: 18px;
+  padding-left: 7rem !important;
+  padding: 40px 0 40px 0;
+}
+.formBox {
+  width: 75% !important;
+}
+
+/* .homeTitles {
+  text-align: center;
+  border: 2px solid white;
+  background-color: #948af4;
+  padding: 30px;
+  margin: auto;
+  border-radius: 15px;
+  color: white;
+} */
+/* .homeTitles a {
+  text-decoration: none;
+  color: white;
+}
+.homeTitles h2:hover {
+  color: #892959;
+} */
+/* .formContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 70px;
+} */
+
+/* .homeTitles a {
+  background-color: #948af4;
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+} */
+
+@media screen and (max-width: 600px) {
+  /* .loginPage {
+    display: none;
+  } */
+  .CommImg {
+    padding-top: 14rem;
+    padding-bottom: 4rem;
+  }
+  .title {
+    padding-top: 100px;
+  }
+  .formContainer {
+    background-color: white;
+    margin-bottom: 240px;
+  }
+  /* .left {
+    display: none;
+    width: 100%;
+  } */
+  /* .app {
+    flex-wrap: wrap;
+  } */
+
+  .left img {
+    display: none;
+  }
+
+  .homeTitles {
+    margin-top: 20px;
+  }
+  .footerTitle {
+    font-size: 12px;
+    padding-left: 25px;
+    padding-top: 22px;
+  }
+  .formBox {
+    width: 100% !important;
+  }
+  .forgotButton,
+  .remeberButton {
+    font-size: 12px;
+  }
+  .familyTitle {
+    font-size: 12px;
+  }
+  .hamda {
+    margin-bottom: 2rem !important;
+  }
+  .message {
+    font-size: 10px;
+  }
+  .navbar-toggler-icon {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .buttonTitle {
+    font-size: 14px;
+  }
+}
