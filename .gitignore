@@ -15,3 +15,5 @@ node_modules/
 vendor/
 
 build
+
+__MACOSX
